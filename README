@@ -1,0 +1,6 @@
+This project is a set of tests for Lustre.
+It will probably run elsewhere too because it uses the POSIX interface.
+
+You need IOR.
+
+	http://sourceforge.net/projects/ior-sio/files/IOR%20latest/IOR-2.10.3/
