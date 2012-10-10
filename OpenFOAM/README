@@ -1,0 +1,6 @@
+This test the StorageAppliance with OpenFOAM.
+
+OpenFOAM does a lot of file operations.
+
+\see https://www.clumeq.ca/wiki/index.php/OpenFoam
+\see http://www.openfoam.com/
