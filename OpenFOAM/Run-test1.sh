@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N OpenFOAM-2012-10-10
-#PBS -o OpenFOAM-2012-10-10.stdout
-#PBS -e OpenFOAM-2012-10-10.stderr
+#PBS -N OpenFOAM-2012-10-10-flange
+#PBS -o OpenFOAM-2012-10-10-flange.stdout
+#PBS -e OpenFOAM-2012-10-10-flange.stderr
 #PBS -A clumeq
 #PBS -q debug1
 #PBS -l hostlist=r109-n[3-6]
@@ -16,7 +16,7 @@ source Load.sh
 
 NSLOTS=32
 
-cd run/tutorials/
+cd run/tutorials/basic/laplacianFoam/flange/
 
 ./Allrun
 
