@@ -20,7 +20,7 @@ echo "r103-n[49-56]" > OpenFOAM-2012-10-10-flange.hosts
 
 cd run/tutorials/basic/laplacianFoam/flange/
 
-
+./Allclean
 ./Allrun
 
 
