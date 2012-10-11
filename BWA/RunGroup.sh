@@ -2,30 +2,36 @@
 
 reference=$1
 group=$2
+jail=$3
+
+if test ! -d $jail
+then
+	mkdir $jail
+fi
 
 indexer="bwa index"
 aligner="bwa aln"
 decompressor="bunzip2"
 
-fifoFile=Storage/fifoFile-$group.fastq
+fifoFile=$jail/fifoFile-$group.fastq
 
-mkfifo $fifoFile
+reference=$jail/Reference-$group.fasta
 
-reference=Storage/Reference-$group.fasta
-
-ln -s Reference.fasta $reference
+ln -s ../Reference.fasta $reference
 
 $indexer $reference
 
 for file in $(cat $group)
 do
+	mkfifo $fifoFile
+
 	$decompressor $file > $fifoFile &
 
-	output=Storage/$(basename $file).sai
+	output=$fail/$(basename $file).sai
 
 	$aligner $reference $fifoFile > $output
+
+	rm fifoFile
 done
 
-rm fifoFile
-
-rm -rf $reference*
+rm -rf $reference
