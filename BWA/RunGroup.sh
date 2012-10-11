@@ -4,9 +4,11 @@ reference=$1
 group=$2
 jail=$3
 
-function LogMessage{
+function LogMessage(){
 
-	echo "[$(date)] $i"
+	message=$1
+
+	echo "[$(date)] $message"
 }
 
 if test ! -d $jail
@@ -17,14 +19,12 @@ fi
 
 indexer="bwa index"
 aligner="bwa aln"
-decompressor="bunzip2"
-
-fifoFile=$jail/fifoFile-$group.fastq
+decompressor="bzcat"
 
 reference=$jail/Reference-$group.fasta
 
 LogMessage "Creating reference link"
-ln -s ../Reference.fasta $reference
+ln -s $(pwd)/Reference.fasta $reference
 
 LogMessage "Indexing reference"
 
@@ -32,6 +32,8 @@ $indexer $reference
 
 for file in $(cat $group)
 do
+	fifoFile=$jail/fifoFile-$group.fastq
+
 	mkfifo $fifoFile
 
 	$decompressor $file > $fifoFile &
@@ -45,4 +47,4 @@ do
 done
 
 LogMessage "Removing reference"
-rm -rf $reference
+#rm -rf $reference
