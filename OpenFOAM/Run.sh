@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N OpenFOAM-2012-10-11-all
-#PBS -o OpenFOAM-2012-10-11-all.stdout
-#PBS -e OpenFOAM-2012-10-11-all.stderr
+#PBS -N OpenFOAM-2012-10-11.2-all
+#PBS -o OpenFOAM-2012-10-11.2-all.stdout
+#PBS -e OpenFOAM-2012-10-11.2-all.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
@@ -16,14 +16,13 @@ source Load.sh
 
 NSLOTS=32
 
-echo "r103-n[49-52]" > OpenFOAM-2012-10-11-all.hosts
+echo "r103-n[49-52]" > OpenFOAM-2012-10-11.2-all.hosts
 
-cp -r $FOAM_TUTORIALS Storage/OpenFOAM-2012-10-11-all
+cp -r $FOAM_TUTORIALS Storage/OpenFOAM-2012-10-11.2-all
 
-cd Storage/OpenFOAM-2012-10-11-all/tutorials/
+cd Storage/OpenFOAM-2012-10-11.2-all/tutorials/
 
 ./Allclean
 
-./Allrun
 
 
