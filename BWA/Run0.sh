@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N bwa-2012-10-11.4-xaa
-#PBS -o bwa-2012-10-11.4-xaa.stdout
-#PBS -e bwa-2012-10-11.4-xaa.stderr
+#PBS -N bwa-2012-10-11.5-xaa
+#PBS -o bwa-2012-10-11.5-xaa.stdout
+#PBS -e bwa-2012-10-11.5-xaa.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
@@ -16,7 +16,7 @@ source Load.sh
 
 for group in $(cat Groups.xaa)
 do
-	./RunGroup.sh Reference.fasta $group Storage/bwa-2012-10-11.4-xaa &
+	./RunGroup.sh Reference.fasta $group Storage/bwa-2012-10-11.5-xaa &
 done
 
 wait

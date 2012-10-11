@@ -4,8 +4,14 @@ reference=$1
 group=$2
 jail=$3
 
+function LogMessage{
+
+	echo "[$(date)] $i"
+}
+
 if test ! -d $jail
 then
+	LogMessage "Creating directory."
 	mkdir $jail
 fi
 
@@ -17,7 +23,10 @@ fifoFile=$jail/fifoFile-$group.fastq
 
 reference=$jail/Reference-$group.fasta
 
+LogMessage "Creating reference link"
 ln -s ../Reference.fasta $reference
+
+LogMessage "Indexing reference"
 
 $indexer $reference
 
@@ -27,11 +36,13 @@ do
 
 	$decompressor $file > $fifoFile &
 
-	output=$fail/$(basename $file).sai
+	output=$jail/$(basename $file).sai
 
+	LogMessage "Aligning "
 	$aligner $reference $fifoFile > $output
 
-	rm fifoFile
+	rm $fifoFile
 done
 
+LogMessage "Removing reference"
 rm -rf $reference
