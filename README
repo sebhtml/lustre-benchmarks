@@ -1,7 +1,9 @@
 This project is a set of tests for Lustre.
 It will probably run elsewhere too because it uses the POSIX interface.
 
-You need IOR.
+All the tests will use the selected-lustre storage
+
+IOR
 
 	http://sourceforge.net/projects/ior-sio/files/IOR%20latest/IOR-2.10.3/
 
@@ -16,11 +18,23 @@ bwa + samtools
 	align all the reads from SRA000271 to hg19.
 
 ABySS
-	datasets: 
 
 	- SRA001125
 
 	- B. cereus NC_003909.8 (New dataset 2 x 250 bp) http://www.illumina.com/systems/miseq/scientific_data.ilmn
+
+Ray Assembler
+
+	- SRA001125
+
+	- B. cereus NC_003909.8 (New dataset 2 x 250 bp) http://www.illumina.com/systems/miseq/scientific_data.ilmn
+
+
+Ray Meta/Communities
+
+	- SRS011098
+
+
 
 Maybe look into 
 
@@ -28,5 +42,3 @@ Maybe look into
 - Open tools using HDF5: http://www.hdfgroup.org/tools5desc.html#1
 - Open tools using netcdf: http://www.unidata.ucar.edu/software/netcdf/usage.html
 
-
-Available hosts: r109-n[3-9] 

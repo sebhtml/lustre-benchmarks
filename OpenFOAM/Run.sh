@@ -16,12 +16,10 @@ source Load.sh
 
 NSLOTS=32
 
-echo "r103-n[49-52]" > OpenFOAM-2012-10-25-all.hosts
+mkdir ../selected-lustre/OpenFOAM-2012-10-25-all
 
-mkdir Storage/OpenFOAM-2012-10-25-all
+cp -r $FOAM_TUTORIALS ../selected-lustre/OpenFOAM-2012-10-25-all
 
-cp -r $FOAM_TUTORIALS Storage/OpenFOAM-2012-10-25-all
-
-cd Storage/OpenFOAM-2012-10-25-all/tutorials/
+cd ../selected-lustre/OpenFOAM-2012-10-25-all/tutorials/
 
 ./Allrun

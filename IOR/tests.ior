@@ -4,7 +4,7 @@
 
 IOR start
 	
-	testFile = StorageAppliance/sequential-test.bin
+	testFile = ../selected-lustre/sequential-test.bin
 	api = POSIX
 	repetitions = 32
 	readFile = 1
@@ -14,38 +14,38 @@ IOR start
 	transferSize = 262144
 	run
 
-	testFile = StorageAppliance/random-test.bin
+	testFile = ../selected-lustre/random-test.bin
 	randomOffset = 1
 	run
 
-	testFile = StorageAppliance/random-read-test-with-fsync.bin
+	testFile = ../selected-lustre/random-read-test-with-fsync.bin
 	randomOffset = 0
 	fsyncPerWrite = 1
 	run
 
-	testFile = StorageAppliance/random-read-test-with-stripe.bin
+	testFile = ../selected-lustre/random-read-test-with-stripe.bin
 	fsyncPerWrite = 0
 	lustreStripeCount = 32
 	lustreStripeSize = 1048576
 	run
 
-	testFile = StorageAppliance/direct.bin
+	testFile = ../selected-lustre/direct.bin
 	lustreStripeCount = 0 # default
 	lustreStripeSize = 0 # default
 	useO_DIRECT = 1
 	run
 
-	testFile = StorageAppliance/per-process.bin
+	testFile = ../selected-lustre/per-process.bin
 	useO_DIRECT = 0
 	filePerProc = 1
 	run
 
-	testFile = StorageAppliance/best-stripe.bin
+	testFile = ../selected-lustre/best-stripe.bin
 	lustreStripeCount = 5
 	lustreStripeSize = 16m
 	run
 
-	testFile = StorageAppliance/best-reported.bin
+	testFile = ../selected-lustre/best-reported.bin
 	blockSize = 32g
 	filePerProc = 1
 	transferSize = 1m
