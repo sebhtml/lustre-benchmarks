@@ -9,10 +9,18 @@ OpenFOAM
 
 	http://www.openfoam.org/archive/2.1.0/docs/user
 
-bwa
+	the test runs all tutorials
+
+bwa + samtools
 
 	align all the reads from SRA000271 to hg19.
 
+ABySS
+	datasets: 
+
+	- SRA001125
+
+	- B. cereus NC_003909.8 (New dataset 2 x 250 bp) http://www.illumina.com/systems/miseq/scientific_data.ilmn
 
 - Sébastien Boisvert
 2012
