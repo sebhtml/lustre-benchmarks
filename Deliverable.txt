@@ -1,4 +1,6 @@
 
+Table 1: Comparison between Oracle(R) and Xyratex(R).
+
 				Oracle(R) Lustre(R)	Xyratex(R) Lustre(R)
 [fluid dynamics]
 OpenFOAM, tutorials			x minutes		x minutes
@@ -8,7 +10,7 @@ ABySS, Bcereus (Illumina)		x minutes		x minutes
 bwa & samtools, SRA000271		x minutes		x minutes
 Ray Meta/Communities, SRS011098		x minutes		x minutes
 [operations]
-IOR random writes			x IOPS / x MiB/s	x IOPS / x MiB/s
+IOR random writes			FAIL			x IOPS / x MiB/s
 IOR random reads			x IOPS / x MiB/s	x IOPS / x MiB/s
 
 

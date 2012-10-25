@@ -23,10 +23,10 @@ ABySS
 	- B. cereus NC_003909.8 (New dataset 2 x 250 bp) http://www.illumina.com/systems/miseq/scientific_data.ilmn
 
 Maybe look into 
-	https://asc.llnl.gov/sequoia/benchmarks
 
-- Sébastien Boisvert
-2012
+- https://asc.llnl.gov/sequoia/benchmarks
+- Open tools using HDF5: http://www.hdfgroup.org/tools5desc.html#1
+- Open tools using netcdf: http://www.unidata.ucar.edu/software/netcdf/usage.html
 
 
 Available hosts: r109-n[3-9] 
