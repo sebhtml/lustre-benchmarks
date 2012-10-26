@@ -5,7 +5,8 @@
 #PBS -e IOR-2012-10-27.1.stderr
 #PBS -A nne-790-aa
 #PBS -q debug1
-#PBS -l hostlist=r105-n{57,58,67,68}
+#PBS -l hostlist=r105-n57+r105-n58+r105-n67+r105-n68
+#####r105-n[57,58,67,68]
 #PBS -l qos=DebugQ 
 #PBS -l walltime=8:00:00
 #PBS -l nodes=4:ppn=8
@@ -17,7 +18,7 @@ nodes=4
 
 
 NSLOTS=$(($nodes * $coresPerNode))
-maximumCores=NSLOTS
+maximumCores=$NSLOTS
 
 . /rap/clumeq/Seb-Boisvert/software/IOR-2.10.3/Load.sh
 
@@ -35,7 +36,7 @@ do
 		mkdir $directory
 		lfs setstripe -s $stripeSize -i 0 -c $stripeCount $directory
 
-		for NSLOTS in $(seq $coresPerNode $coresPerNode $maximumCores)
+		for NSLOTS in 1 $(seq $coresPerNode $coresPerNode $maximumCores)
 		do
 			jobWithNodes=$directory/$NSLOTS
 			mkdir $jobWithNodes
