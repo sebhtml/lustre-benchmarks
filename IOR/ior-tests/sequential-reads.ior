@@ -10,5 +10,5 @@ blockSize = 1048576
 transferSize = 262144
 run
 
-IOR end
+IOR stop
 

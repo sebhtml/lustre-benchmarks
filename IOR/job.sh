@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N IOR-2012-10-27.1
-#PBS -o IOR-2012-10-27.1.stdout
-#PBS -e IOR-2012-10-27.1.stderr
+#PBS -N IOR-2012-10-27.2
+#PBS -o IOR-2012-10-27.2.stdout
+#PBS -e IOR-2012-10-27.2.stderr
 #PBS -A nne-790-aa
 #PBS -q debug1
 #PBS -l hostlist=r105-n57+r105-n58+r105-n67+r105-n68
@@ -22,15 +22,15 @@ maximumCores=$NSLOTS
 
 . /rap/clumeq/Seb-Boisvert/software/IOR-2.10.3/Load.sh
 
-jobDirectory=../selected-lustre/IOR-2012-10-27.1
+jobDirectory=../selected-lustre/IOR-2012-10-27.2
 
 mkdir $jobDirectory
 
 # -1 means all OSTs
-for stripeCount in 1 2 4 8 -1
+for stripeCount in 1 2 3 4 5 6 7 8 -1
 do
 	# Jean-François only wants 1M for stripeSize
-	for stripeSize in 1M 
+	for stripeSize in 1M 2M 4M
 	do
 		directory=$jobDirectory/stripeSize=$stripeSize,stripeCount=$stripeCount
 		mkdir $directory

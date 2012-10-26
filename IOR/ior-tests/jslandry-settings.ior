@@ -1,0 +1,19 @@
+# the test was run on 64 nodes, 1 process per node
+
+IOR start
+
+testFile = storage/IOR.dat
+api = POSIX
+filePerProc = 1
+repetitions = 5
+readFile = 1
+writeFile = 1
+segmentCount = 1
+blockSize = 2g
+transferSize = 2m
+randomOffset = 0
+
+run
+
+IOR stop
+
