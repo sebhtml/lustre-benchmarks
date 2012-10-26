@@ -1,10 +1,24 @@
+#!/bin/bash
 
+#PBS -N Bcereus.Illumina.ray-2012-10-27.1
+#PBS -A six-213-ad
+#PBS -q debug1
+#PBS -l hostlist=r105-n57+r105-n58+r105-n67+r105-n68
+#####r105-n[57,58,67,68]
+#PBS -l qos=DebugQ 
+#PBS -l walltime=8:00:00
+#PBS -l nodes=4:ppn=8
+
+cd $PBS_O_WORKDIR
+
+. Load.sh
 
 time \
 mpiexec \
 -n 32 \
+Ray
 -k 21 \
--o Bcereus.Illumina.ray-2012-10-25.1 \
+-o ../selected-lustre/Bcereus.Illumina.ray-2012-10-27.1 \
 -p \
     Bcereus.Illumina/Bcereus-10_S10_L001_R1_001.fastq.gz \
     Bcereus.Illumina/Bcereus-10_S10_L001_R2_001.fastq.gz \
@@ -77,4 +91,5 @@ mpiexec \
 -p \
     Bcereus.Illumina/Bcereus-9_S9_L001_R1_001.fastq.gz \
     Bcereus.Illumina/Bcereus-9_S9_L001_R2_001.fastq.gz \
-&> Bcereus.Illumina.ray-2012-10-25.1.txt \
+
+
