@@ -1,0 +1,73 @@
+From Jean-Sébastien Landry:
+
+
+le meilleur score a ma connaissance.. (via sge/qsub)
+
+
+Command line used: /lustre/scratch/wch-000-aa/IOR -a POSIX -t 2M -b 2G
+-i 5 -F -v -o /lustre/scratch/wch-000-aa/IOR.datMachine: Linux
+r104-n10
+Start time skew across all tasks: 0.01 sec
+Path: /lustre/scratch/wch-000-aa
+FS: 515.8 TiB   Used FS: 0.1%   Inodes: 157.1 Mi   Used Inodes: 2.3%
+Participating tasks: 64
+
+Summary:
+       api                = POSIX
+       test filename      = /lustre/scratch/wch-000-aa/IOR.dat
+       access             = file-per-process
+       pattern            = segmented (1 segment)
+       ordering in a file = sequential offsets
+       ordering inter file= no tasks offsets
+       clients            = 64 (1 per node)
+       repetitions        = 5
+       xfersize           = 2 MiB
+       blocksize          = 2 GiB
+       aggregate filesize = 128 GiB
+
+Commencing write performance test.
+Sat Dec 19 21:07:20 2009
+
+Commencing read performance test.
+Sat Dec 19 21:07:32 2009
+
+Commencing write performance test.
+Sat Dec 19 21:07:34 2009
+
+Commencing read performance test.
+Sat Dec 19 21:07:44 2009
+
+Commencing write performance test.
+Sat Dec 19 21:07:49 2009
+
+Commencing read performance test.
+Sat Dec 19 21:07:58 2009
+
+Commencing write performance test.
+Sat Dec 19 21:07:59 2009
+
+Commencing read performance test.
+Sat Dec 19 21:08:11 2009
+
+Commencing write performance test.
+Sat Dec 19 21:08:12 2009
+
+Commencing read performance test.
+Sat Dec 19 21:08:24 2009
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min
+(OPs)  Mean (OPs)   Std Dev  Mean (s)Op grep #Tasks tPN reps  fPP
+reord reordoff reordrand seed segcnt blksiz xsize aggsize
+---------  ---------  ---------  ----------   -------  ---------
+---------  ----------   -------   -------
+write       20083.66   11042.41    13333.41   3424.51    10041.83
+5521.21     6666.70   1712.25  10.33570   64 1 5 1 0 1 0 0 1
+-2147483648 2097152 137438953472 -1 POSIX EXCEL
+read       223933.76   72757.55   155804.83  66619.17   111966.88
+36378.77    77902.41  33309.58   1.07660   64 1 5 1 0 1 0 0 1
+-2147483648 2097152 137438953472 -1 POSIX EXCEL
+
+Max Write: 20083.66 MiB/sec (21059.24 MB/sec)
+Max Read:  223933.76 MiB/sec (234811.57 MB/sec)
+
+Run finished: Sat Dec 19 21:08:27 2009 

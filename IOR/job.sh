@@ -27,10 +27,10 @@ jobDirectory=../selected-lustre/IOR-2012-10-27.2
 mkdir $jobDirectory
 
 # -1 means all OSTs
-for stripeCount in 1 2 3 4 5 6 7 8 -1
+for stripeCount in $(cat stripeCountValues.txt)
 do
 	# Jean-François only wants 1M for stripeSize
-	for stripeSize in 1M 2M 4M
+	for stripeSize in $(cat stripeSizeValues.txt)
 	do
 		directory=$jobDirectory/stripeSize=$stripeSize,stripeCount=$stripeCount
 		mkdir $directory
@@ -45,6 +45,12 @@ do
 
 			for testCase in $(ls ior-tests/*.ior)
 			do
+				echo "[$(date)] Starting test"
+				echo "stripeCount= $stripeCount"
+				echo "stripeSize= $stripeSize"
+				echo "NSLOTS= $NSLOTS"
+				echo "testCase= $testCase"
+
 				mpiexec -n $NSLOTS IOR -f $testCase &> storage/000-$(basename $testCase).txt
 			done
 
