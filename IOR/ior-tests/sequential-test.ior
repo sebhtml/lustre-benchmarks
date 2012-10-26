@@ -1,0 +1,14 @@
+
+IOR start
+	
+	testFile = storage/sequential-test.bin
+	api = POSIX
+	repetitions = 32
+	readFile = 1
+	writeFile = 1
+	segmentCount = 1
+	blockSize = 1048576
+	transferSize = 262144
+	run
+IOR stop
+

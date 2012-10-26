@@ -1,0 +1,9 @@
+
+IOR start
+	
+	testFile = storage/default-ior.bin
+	api = POSIX
+	run
+
+IOR stop
+

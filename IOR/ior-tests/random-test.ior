@@ -1,0 +1,15 @@
+
+IOR start
+	
+	testFile = storage/random-test.bin
+	api = POSIX
+	repetitions = 32
+	readFile = 1
+	writeFile = 1
+	segmentCount = 1
+	blockSize = 1048576
+	transferSize = 262144
+	randomOffset = 1
+	run
+IOR stop
+

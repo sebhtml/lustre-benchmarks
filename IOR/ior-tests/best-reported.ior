@@ -1,0 +1,16 @@
+
+IOR start
+	
+	testFile = storage/best-reported.bin
+	api = POSIX
+	repetitions = 32
+	filePerProc = 1
+	readFile = 1
+	writeFile = 1
+	segmentCount = 1
+	blockSize = 1m
+	transferSize = 262144
+	run
+
+IOR stop
+

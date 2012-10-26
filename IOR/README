@@ -1,2 +1,16 @@
-- Add Lustre defaults.
-- Split tests
+- Add Lustre defaults. (DONE)
+- Split tests (DONE)
+
+T
+stripe count: 1, 2, 4, 8
+
+2
+	
+
+4
+
+starting OSS
+starting OST
+
+number of nodes.
+
