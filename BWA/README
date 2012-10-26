@@ -1,3 +1,8 @@
 This tests BWA.
 
 Here, we use 8 bwa processes per node, and 4 nodes.
+
+msub Run0.sh
+msub Run1.sh
+msub Run2.sh
+msub Run3.sh
