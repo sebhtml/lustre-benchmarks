@@ -13,8 +13,8 @@ msub scripts/Copy-Tutorials.sh
 
 # wait
 
-for test in $(cat Tests.txt)
+for test in $(ls scripts/*|grep Test_)
 do
-	msub scripts/$test.sh
+	msub $test
 done
 

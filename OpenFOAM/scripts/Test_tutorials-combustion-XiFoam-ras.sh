@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N OpenFOAM-2012-11-01.1-__TEST_NAME___
-#PBS -o OpenFOAM-2012-11-01.1-__TEST_NAME__.stdout
-#PBS -e OpenFOAM-2012-11-01.1-__TEST_NAME__.stderr
+#PBS -N OpenFOAM-2012-11-01.1-tutorials-combustion-XiFoam-ras_
+#PBS -o OpenFOAM-2012-11-01.1-tutorials-combustion-XiFoam-ras.stdout
+#PBS -e OpenFOAM-2012-11-01.1-tutorials-combustion-XiFoam-ras.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
@@ -19,6 +19,6 @@ NSLOTS=32
 
 cd ../selected-lustre/OpenFOAM-2012-11-01.1-all/
 
-cd __TEST_PATH__
+cd tutorials/combustion/XiFoam/ras
 
-time ./Allrun &> OpenFOAM-2012-11-01.1-__TEST_NAME__.txt
+time ./Allrun &> OpenFOAM-2012-11-01.1-tutorials-combustion-XiFoam-ras.txt
