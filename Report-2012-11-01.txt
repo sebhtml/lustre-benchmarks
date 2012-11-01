@@ -1,0 +1,43 @@
+The runs from last week on Xyratex Lustre.
+
+
+Test: ABySS/SRA001125
+Location: none
+Status: not finished with installation
+
+Test: bwa+samtools /SRA000271
+Location: none
+Status: not run (but was submitted)
+
+Test: GNU sort
+Location: xyratex-lustre/sort-2012-10-27.1
+Status: 
+	PBS: job killed: walltime 28812 exceeded limit 28800
+
+Test: IOR
+Location: xyratex-lustre/IOR-2012-10-27.2
+Status: completed
+
+Test: IOzone
+Location: none
+Status: not installed
+
+Test: OpenFOAM
+Location: xyratex-lustre/OpenFOAM-2012-10-27.1-all
+Status: 
+	1) PBS: job killed: walltime 172834 exceeded limit 172800
+	2) gnuplot not found - skipping graph creatio
+	3) /software/apps/openfoam/2.1.0_intel/OpenFOAM-2.1.0/etc/controlDict: Permission denied
+
+Test: Ray/Bcereus.Illumina
+Location: none
+Status: not run (but was submitted)
+
+Test: Ray/SRA001125 (E. coli K-12 MG1655)
+Location: xyratex-lustre/SRA001125.ray-2012-10-27.1
+Status: 28 minutes, 41 seconds
+
+Test: Ray/SRS011098 (metagenome)
+Location: xyratex-lustre/SRS011098.ray-2012-10-27.1
+Status: ran out of memory (sample is too large for 4 nodes)
+
