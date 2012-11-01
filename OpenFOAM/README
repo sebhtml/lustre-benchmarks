@@ -4,3 +4,17 @@ OpenFOAM does a lot of file operations.
 
 \see https://www.clumeq.ca/wiki/index.php/OpenFoam
 \see http://www.openfoam.com/
+
+
+To launch the tests:
+
+
+msub scripts/Copy-Tutorials.sh
+
+# wait
+
+for test in $(cat Tests.txt)
+do
+	msub scripts/$test.sh
+done
+
