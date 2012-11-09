@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N IOR-2012-10-27.2
-#PBS -o IOR-2012-10-27.2.stdout
-#PBS -e IOR-2012-10-27.2.stderr
+#PBS -N IOR-2012-11-08-Oracle.1
+#PBS -o IOR-2012-11-08-Oracle.1.stdout
+#PBS -e IOR-2012-11-08-Oracle.1.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l hostlist=r105-n57+r105-n58+r105-n67+r105-n68
@@ -22,7 +22,7 @@ maximumCores=$NSLOTS
 
 . /rap/clumeq/Seb-Boisvert/software/IOR-2.10.3/Load.sh
 
-jobDirectory=../selected-lustre/IOR-2012-10-27.2
+jobDirectory=../selected-lustre/IOR-2012-11-08-Oracle.1
 
 mkdir $jobDirectory
 

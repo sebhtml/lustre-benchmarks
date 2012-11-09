@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N OpenFOAM-2012-11-01.1-tutorials-heatTransfer-buoyantSimpleFoam-circuitBoardCooling_
-#PBS -o OpenFOAM-2012-11-01.1-tutorials-heatTransfer-buoyantSimpleFoam-circuitBoardCooling.stdout
-#PBS -e OpenFOAM-2012-11-01.1-tutorials-heatTransfer-buoyantSimpleFoam-circuitBoardCooling.stderr
+#PBS -N OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-buoyantSimpleFoam-circuitBoardCooling_
+#PBS -o OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-buoyantSimpleFoam-circuitBoardCooling.stdout
+#PBS -e OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-buoyantSimpleFoam-circuitBoardCooling.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
@@ -17,8 +17,8 @@ source Load.sh
 
 NSLOTS=32
 
-cd ../selected-lustre/OpenFOAM-2012-11-01.1-all/
+cd ../selected-lustre/OpenFOAM-2012-11-08.1-Oracle-all/
 
 cd tutorials/heatTransfer/buoyantSimpleFoam/circuitBoardCooling
 
-time ./Allrun &> OpenFOAM-2012-11-01.1-tutorials-heatTransfer-buoyantSimpleFoam-circuitBoardCooling.txt
+time ./Allrun &> OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-buoyantSimpleFoam-circuitBoardCooling.txt

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N OpenFOAM-2012-11-01.1-tutorials-multiphase-compressibleInterFoam-les-depthCharge2D_
-#PBS -o OpenFOAM-2012-11-01.1-tutorials-multiphase-compressibleInterFoam-les-depthCharge2D.stdout
-#PBS -e OpenFOAM-2012-11-01.1-tutorials-multiphase-compressibleInterFoam-les-depthCharge2D.stderr
+#PBS -N OpenFOAM-2012-11-08.1-Oracle-tutorials-multiphase-compressibleInterFoam-les-depthCharge2D_
+#PBS -o OpenFOAM-2012-11-08.1-Oracle-tutorials-multiphase-compressibleInterFoam-les-depthCharge2D.stdout
+#PBS -e OpenFOAM-2012-11-08.1-Oracle-tutorials-multiphase-compressibleInterFoam-les-depthCharge2D.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
@@ -17,8 +17,8 @@ source Load.sh
 
 NSLOTS=32
 
-cd ../selected-lustre/OpenFOAM-2012-11-01.1-all/
+cd ../selected-lustre/OpenFOAM-2012-11-08.1-Oracle-all/
 
 cd tutorials/multiphase/compressibleInterFoam/les/depthCharge2D
 
-time ./Allrun &> OpenFOAM-2012-11-01.1-tutorials-multiphase-compressibleInterFoam-les-depthCharge2D.txt
+time ./Allrun &> OpenFOAM-2012-11-08.1-Oracle-tutorials-multiphase-compressibleInterFoam-les-depthCharge2D.txt

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N OpenFOAM-2012-11-01.1-all
-#PBS -o OpenFOAM-2012-11-01.1-all.stdout
-#PBS -e OpenFOAM-2012-11-01.1-all.stderr
+#PBS -N OpenFOAM-2012-11-08.1-Oracle-all
+#PBS -o OpenFOAM-2012-11-08.1-Oracle-all.stdout
+#PBS -e OpenFOAM-2012-11-08.1-Oracle-all.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
@@ -17,7 +17,7 @@ source Load.sh
 
 NSLOTS=32
 
-mkdir ../selected-lustre/OpenFOAM-2012-11-01.1-all
+mkdir ../selected-lustre/OpenFOAM-2012-11-08.1-Oracle-all
 
-cp -r $FOAM_TUTORIALS ../selected-lustre/OpenFOAM-2012-11-01.1-all
+cp -r $FOAM_TUTORIALS ../selected-lustre/OpenFOAM-2012-11-08.1-Oracle-all
 

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N OpenFOAM-2012-11-01.1-tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater_
-#PBS -o OpenFOAM-2012-11-01.1-tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater.stdout
-#PBS -e OpenFOAM-2012-11-01.1-tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater.stderr
+#PBS -N OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater_
+#PBS -o OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater.stdout
+#PBS -e OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
@@ -17,8 +17,8 @@ source Load.sh
 
 NSLOTS=32
 
-cd ../selected-lustre/OpenFOAM-2012-11-01.1-all/
+cd ../selected-lustre/OpenFOAM-2012-11-08.1-Oracle-all/
 
 cd tutorials/heatTransfer/chtMultiRegionSimpleFoam/multiRegionHeater
 
-time ./Allrun &> OpenFOAM-2012-11-01.1-tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater.txt
+time ./Allrun &> OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater.txt
