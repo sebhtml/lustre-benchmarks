@@ -18,7 +18,7 @@ cd $PBS_O_WORKDIR
 
 for group in $(cat Groups.xaa)
 do
-	./RunGroup.sh Reference.fasta $group Storage/bwa+samtools-2012-10-27.99-xaa &
+	./RunGroup.sh Reference.fasta $group ../selected-storage/bwa+samtools-2012-10-27.99-xaa &
 done
 
 wait
