@@ -1,3 +1,4 @@
+<root>
 <test>
 <storage>/scratch</storage>
 <cores>32</cores>
@@ -878,3 +879,4 @@
 <metricName>runningTime (s)</metricName>
 <metricValue>0.002</metricValue>
 </test>
+</root>
