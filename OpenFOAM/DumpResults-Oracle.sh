@@ -16,16 +16,19 @@ function printNode(){
 for i in $(cat List)
 do
 	name=$(echo $i|sed 's/OpenFOAM-2012-11-08.1-Oracle-//g'|sed 's/.stderr//g')
-	metric="runningTime"
+	metric="runningTime (s)"
 	value=$(grep real $i|awk '{print $2}')
 
+	#echo "INPUT $value"
+
+	seconds=$(./convert-to-seconds.py $value)
 	echo "<test>"
 	printNode "storage" $storage
 	printNode "cores" 32
 	printNode "software" $software
 	printNode "testName" $name
-	printNode "metricName" $metric
-	printNode "metricValue" $value
+	printNode "metricName" "$metric"
+	printNode "metricValue" $seconds
 	echo "</test>"
 done
 
