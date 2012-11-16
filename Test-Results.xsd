@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="storage" type="xs:string"/>
+<xs:element name="cores" type="xs:integer"/>
+<xs:element name="software" type="xs:string"/>
+<xs:element name="testName" type="xs:string"/>
+<xs:element name="metricName" type="xs:string"/>
+<xs:element name="metricValue" type="xs:string"/>
+
+<xs:element name="test">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="storage" />
+      <xs:element ref="cores" />
+      <xs:element ref="software" />
+      <xs:element ref="testName" />
+      <xs:element ref="metricName" />
+      <xs:element ref="metricValue" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
