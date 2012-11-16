@@ -1,3 +1,4 @@
+<root>
 <test>
 <storage>/lustre3</storage>
 <cores>1</cores>
@@ -23390,3 +23391,4 @@
 <metricName>meanWriteInputOutputOperationsPerSecond (IOPS)</metricName>
 <metricValue>1904.38</metricValue>
 </test>
+</root>

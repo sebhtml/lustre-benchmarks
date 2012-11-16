@@ -1,3 +1,4 @@
+<root>
 <test>
 <storage>/scratch</storage>
 <cores>1</cores>
@@ -6430,3 +6431,4 @@
 <metricName>meanWriteInputOutputOperationsPerSecond (IOPS)</metricName>
 <metricValue>1870.63</metricValue>
 </test>
+</root>
