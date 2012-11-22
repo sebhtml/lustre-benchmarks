@@ -56,10 +56,7 @@ for document in dataStore:
 
 		softwareList[software][testKey]=True
 
-storages=[]
-
-for key in storageData:
-	storages.append(key)
+storages=["/scratch","/lustre3"]
 
 # dump HTML
 
@@ -81,12 +78,12 @@ for entry in softwareList:
 	software=entry
 	localTests=softwareList[software]
 
-	stream.write("<tr><td class=\"software\">"+software+"</td><td></td><td></td></tr>")
+	stream.write("<tr><td class=\"software\">"+software+"</td><td></td><td></td></tr>\n")
 
 	for testKey in localTests:
 		testName=tests[testKey][OFFSET_NAME]
 		cores=tests[testKey][OFFSET_CORES]
-		stream.write("<tr><td class=\"test\">&nbsp;&nbsp;&nbsp;&nbsp;"+testName+" ("+str(cores)+")</td><td></td><td></td></tr>")
+		stream.write("<tr><td class=\"test\">&nbsp;&nbsp;&nbsp;&nbsp;"+testName+" ("+str(cores)+")</td><td></td><td></td></tr>\n")
 
 		theMainKey=storages[0]
 
@@ -110,7 +107,7 @@ for entry in softwareList:
 
 				index+=1
 
-			stream.write("</tr>")
+			stream.write("</tr>\n")
 			
 
 stream.write("</table>")
