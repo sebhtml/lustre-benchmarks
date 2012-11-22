@@ -1,3 +1,7 @@
+
+
+Stuff below this point are implemented: -----> .
+
 - bwa sampe database.fasta aln_sa1.sai aln_sa2.sai read1.fq read2.fq > aln.sam 
 
 - samtool sort and convert to bam

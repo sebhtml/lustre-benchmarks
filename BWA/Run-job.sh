@@ -7,7 +7,6 @@ function LogMessage(){
 	echo "[$(date)] $message"
 }
 
-
 part=$1
 
 . Load.sh
@@ -27,7 +26,8 @@ LogMessage "Indexing reference"
 (time $indexer $localReference ) &> bwa+samtools-2012-11-22.2-$part-index
 
 # align the reads
-for group in $(cat Groups.$part)
+# TODO: remove the head -n1 when this is ready.
+for group in $(cat Groups.$part |head -n1)
 do
 	(
 	time ./RunGroup.sh Reference.fasta $group ../selected-lustre bwa+samtools-2012-11-22.2-$part
@@ -35,7 +35,7 @@ do
 
 done
 
-# wait for the stuff to complete
 
+# wait for the stuff to complete
 wait
 
