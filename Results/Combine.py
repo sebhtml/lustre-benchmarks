@@ -9,6 +9,8 @@ dataStore=[
 "OpenFOAM-Xyratex.xml"
 ]
 
+storages=["/scratch","/lustre3"]
+
 output="Report.html"
 
 storageData={}
@@ -39,6 +41,10 @@ for document in dataStore:
 		if len(metricValueNode.childNodes)>=1:
 			metricValue=metricValueNode.childNodes[0].nodeValue
 
+# this is likely a false positive
+		if metricValue=="0.002":
+			continue
+
 		testKey=software+"-"+cores+"-"+testName
 
 		if testKey not in tests:
@@ -49,14 +55,13 @@ for document in dataStore:
 			storageData[storage]=True
 			tests[testKey][OFFSET_STORAGE_RESULTS][storage]={}
 
+
 		tests[testKey][OFFSET_STORAGE_RESULTS][storage][metricName]=metricValue
 
 		if software not in softwareList:
 			softwareList[software]={}
 
 		softwareList[software][testKey]=True
-
-storages=["/scratch","/lustre3"]
 
 # dump HTML
 
@@ -71,8 +76,41 @@ stream.write("</style>")
 stream.write("</head><body>")
 
 stream.write("<table border=\"1\" cellpadding=\"10\" cellspacing=\"10\">")
+stream.write("<caption>Summary</caption><tbody>")
+stream.write("<tr><th>Software</th><th>Tests</th><th>Completed for "+storages[0]+"</th><th>Completed for "+storages[1]+"</th>")
+stream.write("<th>Completed for both</th></tr>\n")
+
+for entry in softwareList:
+	software=entry
+	localTests=softwareList[software]
+	numberOfTests=len(localTests)
+	done0=0
+	done1=0
+	doneBoth=0
+
+	for testKey in localTests:
+		has0=0
+		has1=0
+		if storages[0] in tests[testKey][OFFSET_STORAGE_RESULTS]:
+			has0=1
+			done0+=1
+		if storages[1] in tests[testKey][OFFSET_STORAGE_RESULTS]:
+			has1=1
+			done1+=1
+		if has0 and has1:
+			doneBoth+=1
+		
+
+	stream.write("<tr><th>"+software+"</th><th>"+str(numberOfTests)+"</th>")
+	stream.write("<th>"+str(done0)+"</th><th>"+str(done1)+"</th><th>"+str(doneBoth)+"</th></tr>\n")
+
+stream.write("</tbody></table>")
+
+stream.write("<br /><br />")
+
+stream.write("<table border=\"1\" cellpadding=\"10\" cellspacing=\"10\">")
 stream.write("<caption>Tests</caption><tbody>")
-stream.write("<tr><th>Test</th><th>/scratch (Oracle)</th><th>/lustre3 (Xyratex)</th></tr>")
+stream.write("<tr><th>Test</th><th>/scratch (Oracle)</th><th>/lustre3 (Xyratex)</th></tr>\n")
 
 for entry in softwareList:
 	software=entry
@@ -110,7 +148,7 @@ for entry in softwareList:
 			stream.write("</tr>\n")
 			
 
-stream.write("</table>")
+stream.write("</tbody></table>")
 
 stream.write("</body></html>")
 
