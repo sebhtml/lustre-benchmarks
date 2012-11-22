@@ -59,11 +59,11 @@ do
 		output1=$(echo $output|sed 's/_2/_1/g')
 		output2=$output
 
-		file1=$(echo $file|sed 's/_2/_1/g')
-		file2=$file
+		target1=$(echo $target|sed 's/_2/_1/g')
+		target2=$file
 
 		# join the 2 sai files into 1 sorted bam
-		bwa sampe $localReference $output1 $output2 $file1 $file2 \
+		bwa sampe $localReference $output1 $output2 $target1 $target2 \
 			| samtools view -bS - > $target.bam
 
 		samtools sort $target.bam $target.sorted
