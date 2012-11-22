@@ -1,7 +1,7 @@
 <html><head><title>File system tests</title><style>.software{font-weight: bold; background-color: #CC0000; color: #ffffff; }.test{font-style: italic; background-color: #FFFF66; color: #000000; }.metric{ background-color: #CCFF66; color: #000000; }</style></head><body><table border="1" cellpadding="10" cellspacing="10"><caption>Summary</caption><tbody><tr><th>Software</th><th>Tests</th><th>Completed for /scratch</th><th>Completed for /lustre3</th><th>Completed for both</th></tr>
 <tr><th>apps/openfoam/2.1.0</th><th>110</th><th>110</th><th>24</th><th>24</th></tr>
 <tr><th>IOR-2.10.3</th><th>740</th><th>201</th><th>731</th><th>192</th></tr>
-</tbody></table><br /><br /><table border="1" cellpadding="10" cellspacing="10"><caption>Tests</caption><tbody><tr><th>Test</th><th>/scratch (Oracle)</th><th>/lustre3 (Xyratex)</th></tr>
+</tbody></table><br /><br /><table border="1" cellpadding="10" cellspacing="10"><caption>Tests</caption><tbody><tr><th>Test</th><th>/scratch</th><th>/lustre3</th></tr>
 <tr><td class="software">apps/openfoam/2.1.0</td><td></td><td></td></tr>
 <tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;tutorials-compressible-sonicLiquidFoam (32)</td><td></td><td></td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runningTime (s)</td><td>183.552</td><td>Not available</td></tr>
@@ -1119,11 +1119,11 @@
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>1759.86</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>1554.27</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>879.93</td></tr>
-<tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=1M,stripeCount=4/per-process.ior (32)</td><td></td><td></td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>1707.57</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>1226.05</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>426.89</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>4904.19</td></tr>
+<tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=1M,stripeCount=4/best-stripe.ior (24)</td><td></td><td></td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>511.70</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>283.73</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>127.93</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>1134.92</td></tr>
 <tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=4M,stripeCount=1/direct.ior (8)</td><td></td><td></td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>42.30</td><td>47.01</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>224.21</td><td>203.54</td></tr>
@@ -1719,11 +1719,11 @@
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>4322.44</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>702.88</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>17289.78</td></tr>
-<tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=1M,stripeCount=4/best-stripe.ior (24)</td><td></td><td></td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>511.70</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>283.73</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>127.93</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>1134.92</td></tr>
+<tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=1M,stripeCount=4/per-process.ior (32)</td><td></td><td></td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>1707.57</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>1226.05</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>426.89</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>4904.19</td></tr>
 <tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=2M,stripeCount=1/best-reported.ior (8)</td><td></td><td></td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>557.48</td><td>2456.17</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>236.60</td><td>2946.82</td></tr>
@@ -2629,11 +2629,11 @@
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>1603.88</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>1227.50</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>801.94</td></tr>
-<tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=1M,stripeCount=4/random-test.ior (1)</td><td></td><td></td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>2436.52</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>1330.31</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>609.13</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>5321.25</td></tr>
+<tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=2M,stripeCount=1/direct.ior (1)</td><td></td><td></td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>45.18</td><td>48.19</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>204.67</td><td>221.76</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>11.30</td><td>12.05</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>818.69</td><td>887.04</td></tr>
 <tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=1M,stripeCount=4/sequential-reads.ior (24)</td><td></td><td></td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>332.63</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>260.05</td></tr>
@@ -3814,11 +3814,11 @@
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>1470.21</td><td>1959.89</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>19.74</td><td>38.23</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>5880.85</td><td>7839.56</td></tr>
-<tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=2M,stripeCount=1/direct.ior (1)</td><td></td><td></td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>45.18</td><td>48.19</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>204.67</td><td>221.76</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>11.30</td><td>12.05</td></tr>
-<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>818.69</td><td>887.04</td></tr>
+<tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=1M,stripeCount=4/random-test.ior (1)</td><td></td><td></td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>2436.52</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>1330.31</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteDataRate (MiB/s)</td><td>Not available</td><td>609.13</td></tr>
+<tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>5321.25</td></tr>
 <tr><td class="test">&nbsp;&nbsp;&nbsp;&nbsp;stripeSize=1M,stripeCount=2/random-test.ior (32)</td><td></td><td></td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanWriteInputOutputOperationsPerSecond (IOPS)</td><td>Not available</td><td>203.03</td></tr>
 <tr><td class="metric">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meanReadDataRate (MiB/s)</td><td>Not available</td><td>327.71</td></tr>

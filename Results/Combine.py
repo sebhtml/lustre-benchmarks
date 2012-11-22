@@ -110,7 +110,7 @@ stream.write("<br /><br />")
 
 stream.write("<table border=\"1\" cellpadding=\"10\" cellspacing=\"10\">")
 stream.write("<caption>Tests</caption><tbody>")
-stream.write("<tr><th>Test</th><th>/scratch (Oracle)</th><th>/lustre3 (Xyratex)</th></tr>\n")
+stream.write("<tr><th>Test</th><th>"+storages[0]+"</th><th>"+storages[1]+"</th></tr>\n")
 
 for entry in softwareList:
 	software=entry
