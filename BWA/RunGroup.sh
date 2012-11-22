@@ -1,4 +1,15 @@
 #!/bin/bash
+# author: Sébastien Boisvert
+
+#---------------------------------------------------
+
+# => the reference is the fasta file on which reads will
+# be aligned
+# => the group is a file containing a list of fastq files
+# => storage is where every event will occur
+# => jobName is the name of the directory
+
+#---------------------------------------------------
 
 # the fasta reference sequence
 reference=$1
@@ -7,7 +18,9 @@ reference=$1
 group=$2
 
 # the root directory where to begin operations
-jail=$3
+storage=$3
+
+jobName=$4
 
 function LogMessage(){
 
@@ -16,35 +29,24 @@ function LogMessage(){
 	echo "[$(date)] $message"
 }
 
-if test ! -d $jail
-then
-	LogMessage "Creating directory."
-	mkdir $jail
-fi
+jail=$storage/$jobName
 
-indexer="bwa index"
 aligner="bwa aln"
 decompressor="bzcat"
 
-localReference=$jail/Reference-$group.fasta
+localReference=$jail/Reference.fasta
 
-LogMessage "Creating reference link"
-ln -s $(pwd)/Reference.fasta $localReference
 
-LogMessage "Indexing reference"
-
-# We will include this only when the whole thing works
-#$indexer $localReference
-
-for file in $(cat $group)
+# TODO: remove the head -n2 when production-ready
+for file in $(cat $group|head -n2)
 do
 	target=$jail/$(basename $file).fastq
 
-	$decompressor $file > $target
+	$decompressor $storage/$file > $target
 
 	output=$jail/$(basename $file).sai
 
-	LogMessage "Aligning "
+	LogMessage "Aligning $target"
 
 	$aligner $localReference $target > $output
 
@@ -54,9 +56,15 @@ do
 	then
 		LogMessage "Creating sorted bam from 2 sai files"
 
+		output1=$(echo $output|sed 's/_2/_1/g')
+		output2=$output
+
+		file1=$(echo $file|sed 's/_2/_1/g')
+		file2=$file
+
 		# join the 2 sai files into 1 sorted bam
-		bwa sampe $localReference $(echo $output|sed 's/_2/_1/g') $output $(echo $file|sed 's/_2/_1/g') $file \
-		|samtools view -bS - > $target.bam
+		bwa sampe $localReference $output1 $output2 $file1 $file2 \
+			| samtools view -bS - > $target.bam
 
 		samtools sort $target.bam $target.sorted
 
