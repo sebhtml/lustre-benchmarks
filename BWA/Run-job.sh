@@ -22,12 +22,10 @@ LogMessage "Creating reference link"
 ln -s $(pwd)/Reference.fasta $localReference
 LogMessage "Indexing reference"
 
-# TODO We will include this only when the whole thing works
 (time $indexer $localReference ) &> bwa+samtools-2012-11-22.2-$part-index
 
 # align the reads
-# TODO: remove the head -n1 when this is ready.
-for group in $(cat Groups.$part |head -n1)
+for group in $(cat Groups.$part)
 do
 	(
 	time ./RunGroup.sh Reference.fasta $group ../selected-lustre bwa+samtools-2012-11-22.2-$part

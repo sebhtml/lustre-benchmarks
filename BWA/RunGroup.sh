@@ -37,8 +37,7 @@ decompressor="bzcat"
 localReference=$jail/Reference.fasta
 
 
-# TODO: remove the head -n2 when production-ready
-for file in $(cat $group|head -n2)
+for file in $(cat $group)
 do
 	target=$jail/$(basename $file).fastq
 
