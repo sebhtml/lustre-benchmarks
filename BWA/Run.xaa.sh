@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#PBS -N bwa+samtools-2012-11-22.2-xaa
-#PBS -o bwa+samtools-2012-11-22.2-xaa.stdout
-#PBS -e bwa+samtools-2012-11-22.2-xaa.stderr
+#PBS -N bwa+samtools-2012-11.22.4-xaa
+#PBS -o bwa+samtools-2012-11.22.4-xaa.stdout
+#PBS -e bwa+samtools-2012-11.22.4-xaa.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l hostlist=r105-n57

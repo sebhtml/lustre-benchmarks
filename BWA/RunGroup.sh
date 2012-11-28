@@ -29,6 +29,14 @@ function LogMessage(){
 	echo "[$(date)] $message"
 }
 
+function RunCommand(){
+	command=$1
+
+	echo "Command: $command"
+
+	eval $command
+}
+
 jail=$storage/$jobName
 
 aligner="bwa aln"
@@ -41,11 +49,11 @@ for file in $(cat $group)
 do
 	target=$jail/$(basename $file).fastq
 
-	$decompressor $storage/$file > $target
+	RunCommand "$decompressor $storage/$file > $target"
 
 	output=$jail/$(basename $file).sai
 
-	LogMessage "Aligning $target"
+	RunCommand "LogMessage "Aligning $target""
 
 	$aligner $localReference $target > $output
 
@@ -62,8 +70,7 @@ do
 		target2=$file
 
 		# join the 2 sai files into 1 sorted bam
-		bwa sampe $localReference $output1 $output2 $target1 $target2 \
-			| samtools view -bS - > $target.bam
+		RunCommand "bwa sampe $localReference $output1 $output2 $target1 $target2 | samtools view -bS - > $target.bam"
 
 		samtools sort $target.bam $target.sorted
 
