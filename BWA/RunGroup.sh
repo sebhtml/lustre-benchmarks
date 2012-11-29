@@ -67,7 +67,7 @@ do
 		output2=$output
 
 		target1=$(echo $target|sed 's/_2/_1/g')
-		target2=$file
+		target2=$target
 
 		# join the 2 sai files into 1 sorted bam
 		RunCommand "bwa sampe $localReference $output1 $output2 $target1 $target2 | samtools view -bS - > $target.bam"
