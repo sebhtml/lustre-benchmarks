@@ -39,7 +39,7 @@ function RunCommand(){
 
 jail=$storage/$jobName
 
-aligner="bwa aln"
+aligner="bwa aln -t 2 "
 decompressor="bzcat"
 
 localReference=$jail/Reference.fasta
