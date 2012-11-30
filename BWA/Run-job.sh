@@ -7,13 +7,15 @@ function LogMessage(){
 	echo "[$(date)] $message"
 }
 
-part=$1
+storage=$1
+jobToken=$2
+part=$3
 
 . Load.sh
 
 # we make only 1 reference index
 indexer="bwa index"
-jail=../selected-lustre/bwa+samtools-2012-11-29-2-$part
+jail=$storage/$jobToken-$part
 localReference=$jail/Reference.fasta
 
 mkdir $jail
@@ -22,7 +24,7 @@ LogMessage "Creating reference link"
 ln -s $(pwd)/Reference.fasta $localReference
 LogMessage "Indexing reference"
 
-(time $indexer $localReference ) &> bwa+samtools-2012-11-29-2-$part-index
+(time $indexer $localReference ) &> $jobToken-$part-index
 
 # align the reads
 for line in $(seq 1 4)
@@ -34,11 +36,10 @@ do
 	cat $(head -n $last Groups.$part | tail -n 2) > $group
 
 	(
-	time ./RunGroup.sh Reference.fasta $group ../selected-lustre bwa+samtools-2012-11-29-2-$part
-	) &> bwa+samtools-2012-11-29-2-$part-$group &
+	time ./RunGroup.sh Reference.fasta $group $storage $jobToken-$part
+	) &> $jobToken-$part-$group &
 
 done
-
 
 # wait for the stuff to complete
 wait
