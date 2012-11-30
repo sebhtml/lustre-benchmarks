@@ -24,6 +24,7 @@ do
 	echo "Indexing"
 	echo ""
 
+	echo "Task		LastModification		Progress"
 	for i in $(ls|grep bwa+samtools|grep index)
 	do
 		progress=$(cat $i|grep iterations|wc -l)
@@ -50,6 +51,7 @@ do
 	echo "Alignment"
 	echo ""
 
+	echo "Task		LastModification		Progress"
 	for i in $(ls|grep bwa+samtools|grep File)
 	do
 		echo -n "$i  "
