@@ -69,10 +69,12 @@ do
 		target1=$(echo $target|sed 's/_2/_1/g')
 		target2=$target
 
-		# join the 2 sai files into 1 sorted bam
-		RunCommand "bwa sampe $localReference $output1 $output2 $target1 $target2 | samtools view -bS - > $target.bam"
+		combinedTarget=$(echo $target|sed 's/_2//g')
 
-		samtools sort $target.bam $target.sorted
+		# join the 2 sai files into 1 sorted bam
+		RunCommand "bwa sampe $localReference $output1 $output2 $target1 $target2 | samtools view -bS - > $combinedTarget.bam"
+
+		samtools sort $combinedTarget.bam $combinedTarget.sorted
 
 		# remove fastq files
 		rm $target $(echo $target|sed 's/_2/_1/g')
@@ -81,7 +83,7 @@ do
 		rm $output $(echo $output|sed 's/_2/_1/g')
 
 		# remove unsorted bam
-		rm $target.bam
+		rm $combinedTarget.bam
 	fi
 done
 
