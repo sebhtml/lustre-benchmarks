@@ -50,7 +50,7 @@ do
 	echo ""
 
 	echo "Task		LastModification		Progress"
-	for i in $(ls|grep bwa+samtools|grep File)
+	for i in $(ls|grep bwa+samtools|grep Bin_)
 	do
 		echo -n "$i  "
 
@@ -58,7 +58,9 @@ do
 
 		progress=$(grep "bwa aln" $i |wc -l)
 
-		content=File$(echo $i|sed 's/File/ /g'|awk '{print $2}')
+# reconstruct the file name
+# Entries.Bin_1.txt
+		content=Entries$(echo $i|sed 's/Entries/ /g'|awk '{print $2}')
 
 		total=$(cat $content|wc -l)
 
