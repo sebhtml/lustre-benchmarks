@@ -38,9 +38,7 @@ do
 
 		if test $(grep Finished $i|wc -l) -eq 1
 		then
-			echo -n " [X]" &> /dev/null
-		else
-			echo -n " [ ]" &> /dev/null
+			echo -n " COMPLETED"
 		fi
 		
 		echo ""
@@ -67,6 +65,11 @@ do
 		printf "[%2s/%2s] " $progress $total
 
 		printProgressBar $progress
+
+		if test $progress -eq $total
+		then
+			echo -n " COMPLETED"
+		fi
 
 		echo ""
 	done
