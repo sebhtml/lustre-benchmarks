@@ -49,7 +49,7 @@ for file in $(cat $group)
 do
 	target=$jail/$(basename $file).fastq
 
-	RunCommand "$decompressor $storage/$file > $target"
+	RunCommand "$decompressor $file > $target"
 
 	output=$jail/$(basename $file).sai
 

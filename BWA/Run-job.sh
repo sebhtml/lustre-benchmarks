@@ -27,14 +27,8 @@ LogMessage "Indexing reference"
 (time $indexer $localReference ) &> $jobToken-$part-index
 
 # align the reads
-for line in $(seq 1 4)
+for group in $(cat Groups.$part)
 do
-
-	# simulate a pseudo larger file
-	group=File-$part-$line
-	last=$(($line*2))
-	cat $(head -n $last Groups.$part | tail -n 2) > $group
-
 	(
 	time ./RunGroup.sh Reference.fasta $group $storage $jobToken-$part
 	) &> $jobToken-$part-$group &
