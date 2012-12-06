@@ -1,0 +1,12 @@
+../selected-lustre/SRA000271-AfricanGenome/SRR002280_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR002280_2.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR002291_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR002291_2.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR002318_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR002318_2.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR003819_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR003819_2.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR004113_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR004113_2.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR004121_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR004121_2.fastq.bz2

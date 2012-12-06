@@ -1,0 +1,6 @@
+../selected-lustre/SRA000271-AfricanGenome/SRR002276_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR002276_2.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR003968_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR003968_2.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR004860_1.fastq.bz2
+../selected-lustre/SRA000271-AfricanGenome/SRR004860_2.fastq.bz2
