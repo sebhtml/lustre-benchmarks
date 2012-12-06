@@ -34,7 +34,7 @@ function RunCommand(){
 
 	echo "Command: $command"
 
-	eval $command
+	eval "time ( $command )"
 }
 
 jail=$storage/$jobName
@@ -53,9 +53,9 @@ do
 
 	output=$jail/$(basename $file).sai
 
-	RunCommand "LogMessage "Aligning $target""
+	LogMessage "Aligning $target"
 
-	$aligner $localReference $target > $output
+	RunCommand " $aligner $localReference $target > $output "
 
 	# create the sorted sam file if this is the _2 and not the _1
 
@@ -74,7 +74,7 @@ do
 		# join the 2 sai files into 1 sorted bam
 		RunCommand "bwa sampe $localReference $output1 $output2 $target1 $target2 | samtools view -bS - > $combinedTarget.bam"
 
-		samtools sort $combinedTarget.bam $combinedTarget.sorted
+		RunCommand "samtools sort $combinedTarget.bam $combinedTarget.sorted "
 
 		# remove fastq files
 		rm $target $(echo $target|sed 's/_2/_1/g')
