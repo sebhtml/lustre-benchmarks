@@ -27,7 +27,7 @@ LogMessage "Indexing reference"
 (time $indexer $localReference ) &> $jobToken-$part-index
 
 # align the reads
-for group in $(cat Groups.$part)
+for group in $(cat $part)
 do
 	(
 	time ./RunGroup.sh Reference.fasta $group $storage $jobToken-$part
