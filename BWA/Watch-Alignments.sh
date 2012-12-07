@@ -56,7 +56,7 @@ do
 
 		printDate $i
 
-		progress=$(grep "bwa aln" $i |wc -l)
+		progress=$(grep "bwa aln" $i |grep CMD|wc -l)
 
 # reconstruct the file name
 # Entries.Bin_1.txt
