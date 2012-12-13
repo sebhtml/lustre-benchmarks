@@ -3,7 +3,7 @@
 <storage>/lustre3</storage>
 <cores>1</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job00-index</testName>
+<testName>SRA000271-Job00-index</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>4897.195</metricValue>
 </test>
@@ -11,7 +11,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job00--Entries.Bin_0.txt</testName>
+<testName>SRA000271-Job00-Entries.Bin_0-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>79572.502</metricValue>
 </test>
@@ -19,7 +19,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job00--Entries.Bin_10.txt</testName>
+<testName>SRA000271-Job00-Entries.Bin_10-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>82434.173</metricValue>
 </test>
@@ -27,7 +27,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job00--Entries.Bin_11.txt</testName>
+<testName>SRA000271-Job00-Entries.Bin_11-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>100349.566</metricValue>
 </test>
@@ -35,7 +35,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job00--Entries.Bin_12.txt</testName>
+<testName>SRA000271-Job00-Entries.Bin_12-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>145278.548</metricValue>
 </test>
@@ -43,7 +43,7 @@
 <storage>/lustre3</storage>
 <cores>1</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job01-index</testName>
+<testName>SRA000271-Job01-index</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>5034.306</metricValue>
 </test>
@@ -51,7 +51,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job01--Entries.Bin_13.txt</testName>
+<testName>SRA000271-Job01-Entries.Bin_13-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>118189.256</metricValue>
 </test>
@@ -59,7 +59,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job01--Entries.Bin_14.txt</testName>
+<testName>SRA000271-Job01-Entries.Bin_14-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>82192.598</metricValue>
 </test>
@@ -67,7 +67,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job01--Entries.Bin_15.txt</testName>
+<testName>SRA000271-Job01-Entries.Bin_15-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>118192.082</metricValue>
 </test>
@@ -75,7 +75,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job01--Entries.Bin_16.txt</testName>
+<testName>SRA000271-Job01-Entries.Bin_16-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>86802.144</metricValue>
 </test>
@@ -83,7 +83,7 @@
 <storage>/lustre3</storage>
 <cores>1</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job02-index</testName>
+<testName>SRA000271-Job02-index</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>5011.82</metricValue>
 </test>
@@ -91,7 +91,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job02--Entries.Bin_17.txt</testName>
+<testName>SRA000271-Job02-Entries.Bin_17-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>105787.337</metricValue>
 </test>
@@ -99,7 +99,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job02--Entries.Bin_18.txt</testName>
+<testName>SRA000271-Job02-Entries.Bin_18-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>100266.816</metricValue>
 </test>
@@ -107,7 +107,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job02--Entries.Bin_19.txt</testName>
+<testName>SRA000271-Job02-Entries.Bin_19-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>135078.836</metricValue>
 </test>
@@ -115,7 +115,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job02--Entries.Bin_1.txt</testName>
+<testName>SRA000271-Job02-Entries.Bin_1-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>161237.416</metricValue>
 </test>
@@ -123,7 +123,7 @@
 <storage>/lustre3</storage>
 <cores>1</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job03-index</testName>
+<testName>SRA000271-Job03-index</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>4983.943</metricValue>
 </test>
@@ -131,7 +131,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job03--Entries.Bin_20.txt</testName>
+<testName>SRA000271-Job03-Entries.Bin_20-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>121137.099</metricValue>
 </test>
@@ -139,7 +139,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job03--Entries.Bin_21.txt</testName>
+<testName>SRA000271-Job03-Entries.Bin_21-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>97548.547</metricValue>
 </test>
@@ -147,7 +147,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job03--Entries.Bin_22.txt</testName>
+<testName>SRA000271-Job03-Entries.Bin_22-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>135344.826</metricValue>
 </test>
@@ -155,7 +155,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job03--Entries.Bin_23.txt</testName>
+<testName>SRA000271-Job03-Entries.Bin_23-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>157034.089</metricValue>
 </test>
@@ -163,7 +163,7 @@
 <storage>/lustre3</storage>
 <cores>1</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job04-index</testName>
+<testName>SRA000271-Job04-index</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>5089.265</metricValue>
 </test>
@@ -171,7 +171,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job04--Entries.Bin_24.txt</testName>
+<testName>SRA000271-Job04-Entries.Bin_24-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>139265.295</metricValue>
 </test>
@@ -179,7 +179,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job04--Entries.Bin_25.txt</testName>
+<testName>SRA000271-Job04-Entries.Bin_25-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>114095.18</metricValue>
 </test>
@@ -187,7 +187,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job04--Entries.Bin_26.txt</testName>
+<testName>SRA000271-Job04-Entries.Bin_26-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>91456.339</metricValue>
 </test>
@@ -195,7 +195,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job04--Entries.Bin_27.txt</testName>
+<testName>SRA000271-Job04-Entries.Bin_27-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>119901.946</metricValue>
 </test>
@@ -203,7 +203,7 @@
 <storage>/lustre3</storage>
 <cores>1</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job05-index</testName>
+<testName>SRA000271-Job05-index</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>5036.912</metricValue>
 </test>
@@ -211,7 +211,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job05--Entries.Bin_28.txt</testName>
+<testName>SRA000271-Job05-Entries.Bin_28-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>75738.33</metricValue>
 </test>
@@ -219,7 +219,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job05--Entries.Bin_29.txt</testName>
+<testName>SRA000271-Job05-Entries.Bin_29-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>66612.066</metricValue>
 </test>
@@ -227,7 +227,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job05--Entries.Bin_2.txt</testName>
+<testName>SRA000271-Job05-Entries.Bin_2-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>117787.336</metricValue>
 </test>
@@ -235,7 +235,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job05--Entries.Bin_30.txt</testName>
+<testName>SRA000271-Job05-Entries.Bin_30-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>165573.058</metricValue>
 </test>
@@ -243,7 +243,7 @@
 <storage>/lustre3</storage>
 <cores>1</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job06-index</testName>
+<testName>SRA000271-Job06-index</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>5042.159</metricValue>
 </test>
@@ -251,7 +251,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job06--Entries.Bin_31.txt</testName>
+<testName>SRA000271-Job06-Entries.Bin_31-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>128946.383</metricValue>
 </test>
@@ -259,7 +259,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job06--Entries.Bin_3.txt</testName>
+<testName>SRA000271-Job06-Entries.Bin_3-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>108182.861</metricValue>
 </test>
@@ -267,7 +267,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job06--Entries.Bin_4.txt</testName>
+<testName>SRA000271-Job06-Entries.Bin_4-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>118402.319</metricValue>
 </test>
@@ -275,7 +275,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job06--Entries.Bin_5.txt</testName>
+<testName>SRA000271-Job06-Entries.Bin_5-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>111223.243</metricValue>
 </test>
@@ -283,7 +283,7 @@
 <storage>/lustre3</storage>
 <cores>1</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job07-index</testName>
+<testName>SRA000271-Job07-index</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>5084.595</metricValue>
 </test>
@@ -291,7 +291,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job07--Entries.Bin_6.txt</testName>
+<testName>SRA000271-Job07-Entries.Bin_6-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>133852.568</metricValue>
 </test>
@@ -299,7 +299,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job07--Entries.Bin_7.txt</testName>
+<testName>SRA000271-Job07-Entries.Bin_7-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>110164.779</metricValue>
 </test>
@@ -307,7 +307,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job07--Entries.Bin_8.txt</testName>
+<testName>SRA000271-Job07-Entries.Bin_8-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>127584.625</metricValue>
 </test>
@@ -315,7 +315,7 @@
 <storage>/lustre3</storage>
 <cores>2</cores>
 <software>bwa 0.6.2, samtools 0.1.18</software>
-<testName>Job07--Entries.Bin_9.txt</testName>
+<testName>SRA000271-Job07-Entries.Bin_9-align</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>136103.185</metricValue>
 </test>
