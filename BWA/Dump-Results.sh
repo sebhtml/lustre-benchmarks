@@ -2,6 +2,7 @@
 
 name=$1
 storage=$2
+sample=$3
 
 echo "<root>"
 
@@ -14,10 +15,10 @@ do
 	echo "<storage>$storage</storage>"
 	echo "<cores>1</cores>"
 	echo "<software>bwa 0.6.2, samtools 0.1.18</software>"
-	echo "<testName>$indexJob</testName>"
+	echo "<testName>$sample-$indexJob</testName>"
 	echo "<metricName>runningTime (s)</metricName>"
 	
-	indexFile=$(ls|grep $indexJob)
+	indexFile=$(ls|grep $indexJob|grep $name)
 
 	theTime=$(tail -n3 $indexFile|head -n1|awk '{print $2}')
 
@@ -27,7 +28,7 @@ do
 
 	echo "</test>"
 
-	for alignmentJob in $(ls|grep $key|grep Bin)
+	for alignmentJob in $(ls|grep $key|grep Bin|grep $name)
 	do
 		echo "<test>"
 		echo "<storage>$storage</storage>"
@@ -35,8 +36,9 @@ do
 		echo "<software>bwa 0.6.2, samtools 0.1.18</software>"
 
 		expression="s/$key/ /g"
-		testName=$key-$(echo $alignmentJob|sed "$expression"|awk '{print $2}')
-		echo "<testName>$testName</testName>"
+		testName=$key$(echo $alignmentJob|sed "$expression"|awk '{print $2}')
+		testName=$(echo $testName|sed 's/.txt/-align/g')
+		echo "<testName>$sample-$testName</testName>"
 		echo "<metricName>runningTime (s)</metricName>"
 	
 		theTime=$(tail -n3 $alignmentJob|head -n1|awk '{print $2}')

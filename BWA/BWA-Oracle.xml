@@ -1,0 +1,322 @@
+<root>
+<test>
+<storage>/scratch</storage>
+<cores>1</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job00-index</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4555.814</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job00-Entries.Bin_0-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>79966.903</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job00-Entries.Bin_10-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>82498.471</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job00-Entries.Bin_11-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>100245.013</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job00-Entries.Bin_12-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>145613.886</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>1</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job01-index</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4747.332</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job01-Entries.Bin_13-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>116961.708</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job01-Entries.Bin_14-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>82023.633</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job01-Entries.Bin_15-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>118307.354</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job01-Entries.Bin_16-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>87301.633</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>1</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job02-index</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4786.633</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job02-Entries.Bin_17-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>104767.318</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job02-Entries.Bin_18-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>99650.828</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job02-Entries.Bin_19-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>133169.395</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job02-Entries.Bin_1-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>159717.633</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>1</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job03-index</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4706.753</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job03-Entries.Bin_20-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>121542.583</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job03-Entries.Bin_21-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>97545.769</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job03-Entries.Bin_22-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>135238.385</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job03-Entries.Bin_23-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>156916.239</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>1</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job04-index</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4570.214</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job04-Entries.Bin_24-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>141147.321</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job04-Entries.Bin_25-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>113714.871</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job04-Entries.Bin_26-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>92789.584</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job04-Entries.Bin_27-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>121272.207</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>1</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job05-index</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4574.583</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job05-Entries.Bin_28-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>75116.411</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job05-Entries.Bin_29-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>66290.661</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job05-Entries.Bin_2-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>117077.265</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job05-Entries.Bin_30-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>161834.24</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>1</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job06-index</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4608.618</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job06-Entries.Bin_31-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>130041.229</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job06-Entries.Bin_3-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>107994.55</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job06-Entries.Bin_4-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>117544.151</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job06-Entries.Bin_5-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>112299.573</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>1</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job07-index</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4780.118</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job07-Entries.Bin_6-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>134525.656</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job07-Entries.Bin_7-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>110204.072</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job07-Entries.Bin_8-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>126819.431</metricValue>
+</test>
+<test>
+<storage>/scratch</storage>
+<cores>2</cores>
+<software>bwa 0.6.2, samtools 0.1.18</software>
+<testName>SRA000271-Job07-Entries.Bin_9-align</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>135829.646</metricValue>
+</test>
+</root>
