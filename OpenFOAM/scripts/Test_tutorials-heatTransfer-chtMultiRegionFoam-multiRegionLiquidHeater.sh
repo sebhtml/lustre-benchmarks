@@ -1,15 +1,14 @@
 #!/bin/bash
 
-#PBS -N OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater_
-#PBS -o OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater.stdout
-#PBS -e OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater.stderr
+#PBS -N OpenFOAM-2012-12-13.1-Xyratex-tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater_
+#PBS -o OpenFOAM-2012-12-13.1-Xyratex-tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater.stdout
+#PBS -e OpenFOAM-2012-12-13.1-Xyratex-tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
 #PBS -l walltime=48:00:00
 #PBS -l nodes=4:ppn=8
-#PBS -l hostlist=r105-n57+r105-n58+r105-n67+r105-n68
-################PBS -l hostlist=r103-n[49-52]
+#PBS -l hostlist=r102-n30+r105-n58+r110-n5+r105-n67
 
 cd $PBS_O_WORKDIR
 
@@ -17,8 +16,8 @@ source Load.sh
 
 NSLOTS=32
 
-cd ../selected-lustre/OpenFOAM-2012-11-08.1-Oracle-all/
+cd ../selected-lustre/OpenFOAM-2012-12-13.1-Xyratex-all/
 
 cd tutorials/heatTransfer/chtMultiRegionFoam/multiRegionLiquidHeater
 
-time ./Allrun &> OpenFOAM-2012-11-08.1-Oracle-tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater.txt
+time ./Allrun &> OpenFOAM-2012-12-13.1-Xyratex-tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater.txt
