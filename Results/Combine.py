@@ -3,6 +3,8 @@
 from xml.dom.minidom import parse, parseString
 
 dataStore=[
+"BWA-Oracle.xml",
+"BWA-Xyratex.xml",
 "IOR-Oracle.xml",
 "IOR-Xyratex.xml",
 "OpenFOAM-Oracle.xml",
