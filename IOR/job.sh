@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#PBS -N IOR-2012-12-13-Oracle-3
-#PBS -o IOR-2012-12-13-Oracle-3.stdout
-#PBS -e IOR-2012-12-13-Oracle-3.stderr
+#PBS -N IOR-2012-12-19-Oracle-4
+#PBS -o IOR-2012-12-19-Oracle-4.stdout
+#PBS -e IOR-2012-12-19-Oracle-4.stderr
 #PBS -A six-213-ad
 #PBS -q debug1
 #PBS -l qos=DebugQ 
-#PBS -l walltime=8:00:00
+#PBS -l walltime=48:00:00
 #PBS -l nodes=4:ppn=8
 
 cd $PBS_O_WORKDIR
@@ -20,7 +20,7 @@ maximumCores=$NSLOTS
 
 . /rap/clumeq/Seb-Boisvert/software/IOR-2.10.3/Load.sh
 
-jobDirectory=../selected-lustre/IOR-2012-12-13-Oracle-3
+jobDirectory=../selected-lustre/IOR-2012-12-19-Oracle-4
 
 mkdir $jobDirectory
 
