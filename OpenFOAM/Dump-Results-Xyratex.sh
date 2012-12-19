@@ -1,6 +1,6 @@
 #!/bin/bash
 
-key="OpenFOAM-2012-11-01.1-"
+key="OpenFOAM-2012-12-13.1-Xyratex-"
 
 ./Dump-Results.sh $key "/lustre3"
 
