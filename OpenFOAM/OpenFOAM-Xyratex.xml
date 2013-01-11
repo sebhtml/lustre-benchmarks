@@ -139,6 +139,14 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-compressible-rhoCentralFoam-biconic25-55Run35</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>42.942</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-compressible-rhoCentralFoam-shockTube</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>12.39</metricValue>
@@ -163,6 +171,22 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-compressible-rhoPorousMRFPimpleFoam-mixerVessel2D</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>2.703</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-compressible-rhoPorousMRFSimpleFoam-angledDuctExplicit</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>0.613</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-compressible-rhoPorousMRFSimpleFoam-angledDuctImplicit</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>0.616</metricValue>
@@ -179,9 +203,25 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-compressible-sonicFoam-ras-nacaAirfoil</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>Not</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-compressible-sonicLiquidFoam</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>165.487</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-discreteMethods-dsmcFoam-freeSpacePeriodic</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>83.045</metricValue>
 </test>
 <test>
 <storage>/lustre3</storage>
@@ -291,6 +331,14 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-heatTransfer-buoyantSimpleFoam-hotRoom</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>17.18</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-heatTransfer-buoyantSimpleRadiationFoam-hotRadiationRoomFvDOM</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>1321.156</metricValue>
@@ -315,9 +363,41 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-heatTransfer-chtMultiRegionFoam-multiRegionLiquidHeater</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>282.068</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-heatTransfer-chtMultiRegionFoam-snappyMultiRegionHeater</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>0.002</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeaterRadiation</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>30.836</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-heatTransfer-chtMultiRegionSimpleFoam-multiRegionHeater</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>25.485</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-incompressible-boundaryFoam-boundaryWallFunctionsProfile</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>55.259</metricValue>
 </test>
 <test>
 <storage>/lustre3</storage>
@@ -347,6 +427,14 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-incompressible-pimpleDyMFoam-mixerVesselAMI2D</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>4.022</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-incompressible-pimpleDyMFoam-propeller</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>796.263</metricValue>
@@ -366,6 +454,14 @@
 <testName>tutorials-incompressible-pimpleFoam-TJunctionFan</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>70.623</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-incompressible-pisoFoam-les-motorBike-lesFiles</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>0.002</metricValue>
 </test>
 <test>
 <storage>/lustre3</storage>
@@ -555,6 +651,14 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-cavitatingFoam-les</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>1.277</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-multiphase-cavitatingFoam-les-throttle3D</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>58282.423</metricValue>
@@ -579,6 +683,22 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-compressibleInterFoam-les-depthCharge2D</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>405.577</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-compressibleInterFoam-les-depthCharge3D</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>17958.983</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-multiphase-interDyMFoam-ras-damBreakWithObstacle</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>67545.233</metricValue>
@@ -595,9 +715,25 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-interDyMFoam-ras-sloshingTank2D3DoF</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>0.781</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-multiphase-interDyMFoam-ras-sloshingTank2D</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>0.545</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-interDyMFoam-ras-sloshingTank3D3DoF</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>0.757</metricValue>
 </test>
 <test>
 <storage>/lustre3</storage>
@@ -611,9 +747,25 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-interDyMFoam-ras-sloshingTank3D</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>1.283</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-multiphase-interDyMFoam-ras-testTubeMixer</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>52.367</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-interFoam-laminar</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>36.23</metricValue>
 </test>
 <test>
 <storage>/lustre3</storage>
@@ -627,9 +779,25 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-interFoam-ras-damBreakPorousBaffle</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>0.396</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-multiphase-interFoam-ras-damBreak</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>32.81</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-interFoam-ras</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>91.94</metricValue>
 </test>
 <test>
 <storage>/lustre3</storage>
@@ -675,9 +843,25 @@
 <storage>/lustre3</storage>
 <cores>32</cores>
 <software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-multiphaseEulerFoam-damBreak4phase</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>1681.569</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
 <testName>tutorials-multiphase-multiphaseInterFoam-laminar-damBreak4phaseFine</testName>
 <metricName>runningTime (s)</metricName>
 <metricValue>3396.85</metricValue>
+</test>
+<test>
+<storage>/lustre3</storage>
+<cores>32</cores>
+<software>apps/openfoam/2.1.0</software>
+<testName>tutorials-multiphase-multiphaseInterFoam-laminar-damBreak4phase</testName>
+<metricName>runningTime (s)</metricName>
+<metricValue>151.291</metricValue>
 </test>
 <test>
 <storage>/lustre3</storage>
